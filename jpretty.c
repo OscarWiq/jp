@@ -14,14 +14,14 @@ bool esc = FALSE, internal = FALSE, nl = FALSE;
 
 int main(int argc, char *argv[]) {
     
-    if ((argc == 2 && strcmp(argv[1], "-h") == 0) || (argc == 2 && strcmp(argv[1], "--help") == 0)) {
+    if (argc == 2 && ((strcmp(argv[1], "-h") == 0) || strcmp(argv[1], "--help") == 0)) {
         printf("usage: cat file.json | jpretty\n\twget -O - url | jpretty | less\n\tjpretty < file.json\n");
         printf("options: jpretty -t [number]\n\t jpretty --indent [number]\n");
         exit(0);
     }
 
     int ch;
-    if ((argc > 2 && strcmp(argv[1], "-t") == 0) || (argc > 2 && strcmp(argv[1], "--indent") == 0)) {
+    if (argc > 2 && ((strcmp(argv[1], "-t") == 0) || strcmp(argv[1], "--indent") == 0)) {
         ch = atoi(argv[2]);
         if (ch > 0) 
         	indent = ch;
