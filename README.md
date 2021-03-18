@@ -1,6 +1,6 @@
-#Turn valid unformatted JSON readable
+# Turn valid unformatted JSON readable
 
-##example usage:
+## example usage:
 ```
 - wget -O - url | jp
 - wget -O - url | jp | less/more
