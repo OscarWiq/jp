@@ -1,7 +1,9 @@
-Turn unformatted json readable
+#Turn valid unformatted JSON readable
 
-example usage:
-- wget -O - url | jpretty
-- wget -O - url | jpretty | less/more
-- cat file.json | jpretty 
-- jpretty < file.json
+##example usage:
+```
+- wget -O - url | jp
+- wget -O - url | jp | less/more
+- cat file.json | jp
+- jp < file.json
+```
